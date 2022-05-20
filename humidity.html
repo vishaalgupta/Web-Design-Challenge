@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comparison</title>
+    <title>Humidity</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
@@ -14,11 +14,18 @@
   </head>
 <style>
 img {
-    padding: 20;
+    padding: 30px;
     display: block;
     margin: 0 auto;
-    max-height: 90%;
-    max-width: 90%;
+    max-height: 125%;
+    max-width: 125%;
+}
+ .big-image {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 75%;
+    max-width: 75%;
 }
 </style>
 
@@ -45,7 +52,7 @@ img {
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color: black">Comparison</a>
+            <a class="nav-link active" aria-current="page" href="comparison.html" style="color: black">Comparison</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: black">Data</a>
@@ -64,26 +71,30 @@ img {
 
     <!-- Three columns of text below the carousel -->
     <div class="row mt-5">
-      <div style="background-color: white">
-        <h2 class="fw-normal">Summary: Latitude vs. X</h2>
-        <h6>Click any plot to get an in-depth analysis.</h6>
+      <div class="col-lg-8" style="background-color: white">
+        <h2 class="fw-normal">Humidity</h2>
+        <div class="row">
+            <img class="big-image" align="left" src = "assets/images/Fig2.png">
+        </div>
+        <div class="row">
+            <p>The humidity doesn't vary much based on latitude. A single latitude can have extremely varied humidity meaning there isn't a strong correlation between the two.</p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="background-color: white">
+        <h2 class="fw-normal">Visualizations</h2>
         <div class="row">
           <div class="col-lg-6">
-              <h3 align="center">vs. Max Temperature</h3>
-              <a href="temperature.html"><img src = "assets/images/Fig1.png"></a>
+            <a href="temperature.html"><img src = "assets/images/Fig1.png"></a>
           </div>
           <div class="col-lg-6">
-            <h3 align="center">vs. Humidity</h3>
-            <a href="humidity.html"><img src = "assets/images/Fig2.png"></a>
+            <a href="humidity.html"><img style="border: solid green" src = "assets/images/Fig2.png"></a>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <h3 align="center">vs. Cloudiness</h3>
             <a href="cloudiness.html"><img src = "assets/images/Fig3.png"></a>
           </div>
           <div class="col-lg-6">
-            <h3 align="center">vs. Wind Speed</h3>
             <a href="windspeed.html"><img src = "assets/images/Fig4.png"></a>
           </div>
         </div>
