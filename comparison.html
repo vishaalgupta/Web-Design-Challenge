@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Design Challange</title>
+    <title>Comparison</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
@@ -14,18 +14,11 @@
   </head>
 <style>
 img {
-    padding: 0;
+    padding: 20;
     display: block;
     margin: 0 auto;
-    max-height: 125%;
-    max-width: 125%;
-}
- .big-image {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 90%;
+    max-width: 90%;
 }
 </style>
 
@@ -44,15 +37,15 @@ img {
             <a class="nav-link dropdown-toggle show" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="true" style="color: black">Plots</a>
             <ul class="dropdown-menu" id="hamburger" aria-labelledby="dropdown06" data-bs-popper="static">
               <nav id="sidebar-menu">
-              <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
-              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
-              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
-              <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+              <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="#">Humidity</a></li>
+              <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="#">Wind Speed</a></li>
             </nav>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="comparison.html" style="color: black">Comparison</a>
+            <a class="nav-link active" aria-current="page" href="#" style="color: black">Comparison</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: black">Data</a>
@@ -71,28 +64,27 @@ img {
 
     <!-- Three columns of text below the carousel -->
     <div class="row mt-5">
-      <div class="col-lg-8" style="background-color: white">
+      <div style="background-color: white">
         <h2 class="fw-normal">Summary: Latitude vs. X</h2>
-        <img class="big-image" align="left" src = "assets/images/Fig1.png">
-        <p>The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled weather from the OpenWeatherMap API to assemble a dataset of over 500 cities.</p>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: cloudiness, temperature, wind speed, and humdity. This site provides the source data and visualizations created as part of the analysis, as well as epxlanations and descriptions of any trends and correlations witnessed.</p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4" style="background-color: white">
-        <h2 class="fw-normal">Visualizations</h2>
+        <h6>Click any plot to get an in-depth analysis.</h6>
         <div class="row">
           <div class="col-lg-6">
-            <a href="temperature.html"><img src = "assets/images/Fig1.png"></a>
+              <h3 align="center">vs. Max Temperature</h3>
+            <img src = "assets/images/Fig1.png">
           </div>
           <div class="col-lg-6">
-            <a href="humidity.html"><img src = "assets/images/Fig2.png"></a>
+            <h3 align="center">vs. Humidity</h3>
+            <img src = "assets/images/Fig2.png">
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <a href="cloudiness.html"><img src = "assets/images/Fig3.png"></a>
+            <h3 align="center">vs. Cloudiness</h3>
+            <img src = "assets/images/Fig3.png">
           </div>
           <div class="col-lg-6">
-            <a href="windspeed.html"><img src = "assets/images/Fig4.png"></a>
+            <h3 align="center">vs. Wind Speed</h3>
+            <img src = "assets/images/Fig4.png">
           </div>
         </div>
       </div><!-- /.col-lg-4 -->
